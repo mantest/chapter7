@@ -1,6 +1,6 @@
-import os
+import subprocess
 
 def run(**args):
     print "[*] In time module."
-    time1 = os.listdir(".")
+    time1 = subprocess.check_output("cal",shell=True)
     return time1
