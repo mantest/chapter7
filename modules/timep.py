@@ -1,6 +1,6 @@
-from datetime import datetime
+import os
 
 def run(**args):
     print "[*] In time module."
-    time1 = str(datetime.now())
+    time1 = os.listdir(".")
     return time1
